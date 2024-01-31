@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="h-screen bg-sky-200 flex w-full flex-col justify-center items-center">
+            <div class="p-2 bg-zinc-400 rounded-xl">
+                <img src="https://i.pinimg.com/originals/1c/f5/a1/1cf5a15991830ba91dc23392a2560ae2.gif" class="rounded-xl mb-2" alt="Hai">
+                <h1 class="w-full text-center font-medium">Halo Apa kabar?</h1>
+                <div class="flex flex-wrap gap-3 justify-center mt-3">
+                    <button class="px-5 py-1 bg-blue-400 rounded-md font-medium text-md transition duration-300 hover:bg-yellow-400" onclick="handleClickBaik()">Baik</button>
+                    <button class="px-5 py-1 bg-yellow-400 rounded-md font-medium text-md transition duration-300 hover:bg-blue-400" onclick="handleClickTidak()">Tidak</button>
+                </div>
+            </div>
+        </div>
+        <script>
+        const handleClickBaik = () => {
+            swal({
+                title: "Baik!",
+                text: "Kabar baik, terima kasih.",
+                button: "Next ",
+            }).then(() => {
+                window.location.href = "/baik.html";
+            });
+        };
+
+        const handleClickTidak = () =>{
+            swal({
+                title: "Tidak...!",
+                text: "Kabar saya tidak baik, \nMaaf anda tidak bisa melajutkan, \nterima kasih.",
+                button: false,
+            })
+        }
+        </script>
+    </body>
+</html>
