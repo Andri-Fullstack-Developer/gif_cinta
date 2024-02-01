@@ -1,0 +1,19 @@
+.bottomGroup {
+  margin-top: 150px !important;
+}
+
+button {
+  z-index: 9999 !important;
+  position: absolute !important;
+  display: flex !important;
+  cursor: pointer !important;
+  border: none !important;
+  margin: 0 10px !important;
+  height: 40px;
+  width: 80px;
+}
+.no {
+  right: 20% !important;
+  text-align: center;
+  /* font-size: 10px; */
+}
