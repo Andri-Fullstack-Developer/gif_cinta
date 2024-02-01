@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text baik Cinta</title>
-    <!-- <link rel="stylesheet" href="/baik.css"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <div
-        class="h-screen bg-[url('https://i.pinimg.com/originals/bd/4b/45/bd4b45c72d463584da6fd4d4baf309aa.gif')] flex w-full flex-col justify-center items-center p-5">
-        <div class="p-2 bg-zinc-400 rounded-xl bg-opacity-20 shadow-xl moved">
-            <img id="dynamicImage" src="https://i.pinimg.com/originals/27/9a/37/279a3784afd830bbdc8c01659a6e7d2d.gif"
-                class="rounded-xl mb-2" alt="Hai">
-            <div class="w-full flex flex-col justify-center items-center mt-2">
-                <h1 id="dynamicText" class="font-medium text-md text-white">Hai cantik</h1>
-                <h4 id="dynamicDes" class="font-normal text-md text-white text-center">
-                    Apakah kamu mau jadi pacar aku?
-                </h4>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text baik Cinta</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="h-screen bg-[url('https://i.pinimg.com/originals/bd/4b/45/bd4b45c72d463584da6fd4d4baf309aa.gif')] flex w-full flex-col justify-center items-center p-5">
+            <div class="p-2 bg-zinc-400 rounded-xl bg-opacity-20 shadow-xl moved">
+                <img
+                    id="dynamicImage"
+                    src="https://i.pinimg.com/originals/27/9a/37/279a3784afd830bbdc8c01659a6e7d2d.gif"
+                    class="rounded-xl mb-2"
+                    alt="Hai"
+                >
+                <div class="w-full flex flex-col justify-center items-center mt-2">
+                    <h1 id="dynamicText" class="font-medium text-md text-white">Hai cantik</h1>
+                    <h4 id="dynamicDes" class="font-normal text-md text-white text-center">
+                        Apakah kamu mau jadi pacar aku?
+                    </h4>
+                </div>
+                <div class="buttomGoup relative mt-5">
+                    <button class="yes h-10 w-24 bg-blue-400 absolute flex justify-center items-center rounded-lg left-0" onclick="handleClikTerima()">
+                        <h1 class="text-md font-bold">Terima</h1>
+                    </button>
+                    <button class="no  h-10 w-24 bg-red-400 absolute flex justify-center items-center rounded-lg right-0">
+                        <h1 class="text-md font-bold">Tidak</h1>
+                    </button>
+                </div>
             </div>
-            <div class="buttomGoup relative mt-5">
-                <button class="yes h-10 w-24 bg-blue-400 absolute flex justify-center items-center rounded-lg left-0"
-                    onclick="handleClikTerima()">
-                    <h1 class="text-md font-bold">Terima</h1>
-                </button>
-                <button class="no  h-10 w-24 bg-red-400 absolute flex justify-center items-center rounded-lg right-0">
-                    <h1 class="text-md font-bold">Tidak</h1>
-                </button>
+            <div class="absolute bottom-2 right-2">
+                <h5 class="text-white text-xs animate-bounce">by:@AndriDev</h5>
             </div>
         </div>
-    </div>
-    <script>
+        <script>
         const handleClikTerima = () => {
-            // Mengganti gambar saat tombol "Terima" diklik
+           
             document.getElementById('dynamicImage').src =
                 'https://i.pinimg.com/originals/e7/b0/26/e7b0269da7c8635849a9a6b15a5c2fb3.gif';
             document.getElementById('dynamicText').innerText = 'Terima kasih sudah menerima cintaku';
@@ -44,7 +46,7 @@
             const audio1 = new Audio('/hore.mp3');
             audio1.play();
 
-            // Menambahkan audio kedua
+          
             const audio2 = new Audio('/text.mp3');
             audio2.play();
 
@@ -71,7 +73,6 @@
             b.style.left = i + 'px';
             b.style.top = j + 'px';
         }
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>

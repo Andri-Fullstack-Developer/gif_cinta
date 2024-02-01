@@ -8,9 +8,9 @@ button {
   display: flex !important;
   cursor: pointer !important;
   border: none !important;
-  margin: 0 10px !important;
-  height: 40px;
-  width: 80px;
+  /* margin: 0 10px !important; */
+  /* height: 40px;
+  width: 80px; */
 }
 .no {
   right: 20% !important;
